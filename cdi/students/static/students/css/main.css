@@ -1,0 +1,117 @@
+h6{
+    color: gray;
+}
+
+.list-students{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -o-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -ms-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+}
+
+.list-students .main-row{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #6c7ae0;
+}
+
+.list-students tbody tr td{
+    font-size: 15px;
+    color: gray;
+    line-height: 1.4;
+}
+
+.list-students tbody tr:nth-child(even){
+    background-color: #f8f6ff;
+}
+
+
+
+.main_table{
+    margin-top: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -o-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -ms-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 55px;
+}
+.main_table .first_section .row .col-sm-9{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6c7ae0;
+}
+.main_table .first_section .row .col-sm-3{
+    color: #fff;
+    background-color: #6c7ae0;
+}
+
+.main_table .first_section .row .col-sm-9 .border-solid{
+    border-top: solid white 1px;
+}
+
+.title-background{
+    background-color: #F8F5FF;
+}
+
+
+.first_section h1{
+    font-size: 22px
+}
+
+.second_section{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.second_section table{
+    width: 100%;
+    font-size: 22px;
+}
+
+.second_section table tr{
+    display: flex;
+    text-align: center;
+}
+
+.second_section table tr th, .second_section table tr td{
+    flex: 1;
+    border: solid gray .3px;
+}
+
+.second_section table tbody tr td{
+    font-size: 20px;
+    color: gray;
+}
+
+.second_section table tbody tr th{
+    font-size: 21px;
+}
+
+.row.form-group {
+    align-items: center;
+}
+
+.form-check label{
+    display: inline;
+}
+
+form#filter_g {
+    margin-bottom: 15px;
+}
+
+.profile-img{
+    max-width: 100px;
+    border-radius: 25px;
+    padding-top: 4px;
+    }

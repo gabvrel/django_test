@@ -1,0 +1,215 @@
+{% extends "students/base.html" %}
+{% block content %}
+<article class="main_table">
+    <div class="first_section">
+        <div class="row title-background">
+            <div class="col-sm-3 text-center">
+               <img src="{{ students.foto.url }}"  class="profile-img" alt="Profile-img">
+            </div>
+            <div class="col-sm-9">
+                <div>
+                    <h1>FICHA DE MATRICULA</h1>
+                    <h1>2017-2018</h1>
+                </div>
+                <div class="border-solid">
+                    <h1>DATOS DEL ALUMNO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second_section">
+        <table>
+            <tr>
+                <th>NOMBRE</th>
+                <th>CEDULA DE IDENTIDAD</th>
+            </tr>
+            <tr>
+                <td>{{ students.nombre }}</td>
+                <td>{{ students.ci }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>SEXO</th>
+                <th>FECHA DE NACIMIENTO</th>
+                <th>EDAD</th>
+            </tr>
+            <tr>
+                <td>{{ students.sexo }}</td>
+                <td>{{ students.fecha_de_nacimiento }}</td>
+                <td>{{ students.age }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>NACIONALIDAD</th>
+                <th>ETNIA</th>
+            </tr>
+            <tr>
+                <td>{{ students.nacionalidad }}</td>
+                <td>{{ students.raza }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="title-background">
+                <th>DATOS DEL DOMICILIO</th>
+            </tr>
+            <tr>
+                <th>DIRECCION:</th>
+                <td>{{ students.domicilio }}</td>
+            </tr>
+            <tr>
+                <th>TELEFONO</th>
+                <td>{{ students.telefono_de_la_madre }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="title-background">
+                <th>CONTROLES MEDICOS</th>
+            </tr>
+            <tr>
+                <th>DATOS DE NACIMIENTO</th>
+            </tr>
+            <tr>
+                <th>EMBARAZO DE LA MADRE</th>
+                <th>PARTO DE LA MADRE</th>
+                <th>DISCAPACIDAD</th>
+            </tr>
+            <tr>
+                <td>{{students.embarazo_de_la_madre_con_control }}</td>
+                <td>{{students.parto_de_la_madre }}</td>
+                <td>{{students.tiene_discapacidad }}</td>
+            </tr>
+            <tr>
+                <th>TIPO DE ALIMENTACION</th>
+                <th>DESDE QUE EDAD RECIBIO ALIMENTOS SOLIDOS</th>
+                <th>HASTA QUE EDAD RECIBIO LACTANCIA MATERNA</th>
+            </tr>
+            <tr>
+                <td>{{ students.tipo_de_alimentacion }}</td>
+                <td>{{ students.desde_que_edad_comio_solidos }}</td>
+                <td>{{ students.hasta_que_edad_tomo_leche_materna }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>INFORMACION ADICIONAL</th>
+            </tr>
+            <tr>
+                <th>TIPO DE SANGRE</th>
+                <td>{{ students.tipo_de_sangre }}</td>
+                <th>ALERGIAS</th>
+                <td>{{ students.alergias }}</td>
+            </tr>
+            <tr>
+                <th>ENFERMEDADES</th>
+                <td>{{ students.enfermedades }}</td>
+            </tr>
+                        <tr>
+                <th>OPERACIONES REALIZADAS</th>
+                <td>{{ students.operaciones }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="title-background">
+                <th>DATOS DEL REPRESENTANTE</th>
+            </tr>
+            <tr>
+                <th>NOMBRE DEL REPRESENTANTE</th>
+                <th>CEDULA DE REPRESENTANTE</th>
+            </tr>
+            <tr>
+                <td>{{ students.nombre_del_representante }}</td>
+                <td>{{ students.ci_del_representante }}</td>
+            </tr>
+            <tr>
+                <th>ESTADO CIVIL</th>
+                <th>VIVE CON EL ESTUDIANTE</th>
+            </tr>
+            <tr>
+                <td>{{ students.estado_civil_del_representante }}</td>
+                <td>{{ students.representante_vive_con_estudiante }}</td>
+            </tr>
+            <tr>
+                <th>TELEFONO DE REPRESENTANTE</th>
+                <td>{{ students.telefono_del_representante }}</td>
+            </tr>
+            <tr>
+                <th>DOMICILIO DE REPRESENTANTE</th>
+            </tr>
+            <tr>
+                <td>{{ students.domicilio_del_representante }}</td>
+            </tr>
+            <tr>
+                <th>LUGAR DE TRABAJO</th>
+            </tr>
+            <tr>
+                <td>{{ students.lugar_trabajo_del_representante }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="title-background">
+                <th>DATOS DE LA MADRE</th>
+            </tr>
+            <tr>
+                <th>NOMBRE DE LA MADRE</th>
+                <th>CEDULA DE IDENTIDAD</th>
+            </tr>
+            <tr>
+                <td>{{ students.nombre_de_la_madre }}</td>
+                <td>{{ students.ci_de_la_madre }}</td>
+            </tr>
+            <tr>
+                <th>ESTADO CIVIL</th>
+                <th>VIVE CON EL ESTUDIANTE</th>
+            </tr>
+            <tr>
+                <td>{{ students.estado_civil_de_la_madre }}</td>
+                <td>{{ students.madre_vive_con_hijo }}</td>
+            </tr>
+            <tr>
+                <th>LUGAR DE TRABAJO</th>
+            </tr>
+            <tr>
+                <td>{{ students.lugar_trabajo_de_la_madre }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr class="title-background">
+                <th>DATOS DE LA PADRE</th>
+            </tr>
+            <tr>
+                <th>NOMBRE DEL PADRE</th>
+                <th>CEDULA DE IDENTIDAD</th>
+            </tr>
+            <tr>
+                <td>{{ students.nombre_del_padre }}</td>
+                <td>{{ students.ci_del_padre }}</td>
+            </tr>
+            <tr>
+                <th>ESTADO CIVIL</th>
+                <th>VIVE CON EL ESTUDIANTE</th>
+            </tr>
+            <tr>
+                <td>{{ students.estado_civil_de_padre }}</td>
+                <td>{{ students.padre_vive_con_hijo }}</td>
+            </tr>
+            <tr>
+                <th>LUGAR DE TRABAJO</th>
+            </tr>
+            <tr>
+                <td>{{ students.lugar_trabajo_del_padre }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>DOCUMENTOS ADJUNTOS</th>
+            </tr>
+            <tr>
+                <td><a href="{{ students.documentos_adjuntos.url }}">{{ students.documentos_adjuntos }}</a></td>
+            </tr>
+        </table>
+    </div>
+</article>
+
+{% endblock content %}

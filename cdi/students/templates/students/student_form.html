@@ -1,0 +1,22 @@
+{% extends "students/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mt-5 mb-4">
+                    Añadir Nuevo Estudiante
+                </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">
+                    Añadir
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+{% endblock content %}

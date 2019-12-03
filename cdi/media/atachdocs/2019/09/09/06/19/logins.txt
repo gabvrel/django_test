@@ -1,0 +1,16 @@
+---------------CREAALL----------------
+MySQL 
+root
+password: podoga"123"
+-----------------CDI------------------
+------gmail-----------
+password: podoga1233
+cdiplaneadoresdf@gmail.com
+---------------------
+------hotmail--------
+peques_planeadores@hotmail.com
+password: podoga123
+---------------------
+-------------------------------------------
+aws------gabvrel------------------------
+password: porlaorda123!
